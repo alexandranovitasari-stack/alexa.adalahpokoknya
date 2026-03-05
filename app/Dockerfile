@@ -5,4 +5,4 @@ COPY index.html .
 
 # Stage 2 (final image)
 FROM nginx:alpine
-COPY --from=builder index.html /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
